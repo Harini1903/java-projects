@@ -1,14 +1,15 @@
-Java Projects Collection
+# **Java Projects Collection**
+
 This repository contains two Java projects:
 
-Currency Converter – A simple application to convert between different currencies.
+1. **Currency Converter** – A simple application to convert between different currencies.
+2. **Dino Game** – A fun 2D game inspired by Chrome’s offline dinosaur runner.
 
-Dino Game – A fun 2D game inspired by Chrome’s offline dinosaur runner.
+---
 
-📂 Project Structure
-css
-Copy
-Edit
+## 📂 Project Structure
+
+```
 Java-Projects-Collection/
 ├── Currency_Converter/
 │   ├── src/
@@ -27,93 +28,96 @@ Java-Projects-Collection/
     │   ├── GameWindow.java
     │   └── InputHandler.java
     └── README.md
-1️⃣ Currency Converter
-📌 Overview
-The Currency Converter is a Java-based tool that lets users convert between different currencies using fixed or real-time exchange rates (depending on implementation).
+```
 
-✨ Features
-Convert between USD, EUR, GBP, INR, etc.
+---
 
-Console or GUI-based interface
+## 1️⃣ Currency Converter
 
-Error handling for invalid input
+### 📌 Overview
 
-Easy to update exchange rates
+The **Currency Converter** is a Java-based tool that lets users convert between different currencies using fixed or real-time exchange rates (depending on implementation).
 
-🛠 Requirements
-Java JDK 8 or higher
+### ✨ Features
 
-Eclipse / IntelliJ / VS Code
+* Convert between USD, EUR, GBP, INR, etc.
+* Console or GUI-based interface
+* Error handling for invalid input
+* Easy to update exchange rates
 
-🚀 How to Run in Eclipse
-Open Eclipse
+### 🛠 Requirements
 
-File → New → Java Project → Name it Currency_Converter
+* Java JDK 8 or higher
+* Eclipse / IntelliJ / VS Code
 
-Create a package (e.g., converter)
+### 🚀 How to Run in Eclipse
 
-Add all .java files into src/converter
+1. Open **Eclipse**
+2. **File → New → Java Project** → Name it `Currency_Converter`
+3. Create a package (e.g., `converter`)
+4. Add all `.java` files into `src/converter`
+5. Make sure your **Main.java** contains:
 
-Make sure your Main.java contains:
+   ```java
+   public static void main(String[] args) {
+       new CurrencyConverter(); // or your main logic
+   }
+   ```
+6. **Right-click Main.java → Run As → Java Application**
 
-java
-Copy
-Edit
-public static void main(String[] args) {
-    new CurrencyConverter(); // or your main logic
-}
-Right-click Main.java → Run As → Java Application
+### 💡 Example Output
 
-💡 Example Output
-yaml
-Copy
-Edit
+```
 Welcome to Currency Converter
 Enter amount in USD: 100
 Choose target currency: EUR
 Converted Amount: 91.50 EUR
-2️⃣ Dino Game
-📌 Overview
-The Dino Game is a Java Swing-based clone of the Chrome offline dinosaur runner game.
+```
+
+---
+
+## 2️⃣ Dino Game
+
+### 📌 Overview
+
+The **Dino Game** is a Java Swing-based clone of the Chrome offline dinosaur runner game.
 Jump over obstacles and survive as long as possible.
 
-✨ Features
-Java Swing GUI
+### ✨ Features
 
-Character movement & jump mechanics
+* Java Swing GUI
+* Character movement & jump mechanics
+* Collision detection
+* Increasing difficulty
 
-Collision detection
+### 🛠 Requirements
 
-Increasing difficulty
+* Java JDK 8 or higher
+* Eclipse IDE
 
-🛠 Requirements
-Java JDK 8 or higher
+### 🚀 How to Run in Eclipse
 
-Eclipse IDE
+1. Open **Eclipse**
+2. **File → New → Java Project** → Name it `Dino_Game_java`
+3. Create a package named exactly:
 
-🚀 How to Run in Eclipse
-Open Eclipse
+   ```java
+   package Dino_Game_java;
+   ```
+4. Add **all .java files** from `Dino_Game_java` folder into `src/Dino_Game_java`
+5. Create or open a **Main class**:
 
-File → New → Java Project → Name it Dino_Game_java
+   ```java
+   package Dino_Game_java;
 
-Create a package named exactly:
+   public class Main {
+       public static void main(String[] args) {
+           new GameWindow(); // Starts the game
+       }
+   }
+   ```
+6. **Right-click Main.java → Run As → Java Application**
 
-java
-Copy
-Edit
-package Dino_Game_java;
-Add all .java files from Dino_Game_java folder into src/Dino_Game_java
+---
 
-Create or open a Main class:
 
-java
-Copy
-Edit
-package Dino_Game_java;
-
-public class Main {
-    public static void main(String[] args) {
-        new GameWindow(); // Starts the game
-    }
-}
-Right-click Main.java → Run As → Java Application
